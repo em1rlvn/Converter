@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='75' font-size='75'>💱</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-icon">💱</div>
+        <h1>Конвертер валют</h1>
+
+        <div class="input-group">
+            <input type="number" id="amount" placeholder="Введите сумму" value="1" min="0" step="any">
+        </div>
+
+        <div class="input-group">
+            <select id="from"></select>
+        </div>
+
+        <button class="swap-btn" id="swap" title="Поменять валюты местами">↔</button>
+
+        <div class="input-group">
+            <select id="to"></select>
+        </div>
+
+        <div class="result" id="result">—</div>
+        <div class="rate" id="rate"></div>
+        <div class="updated" id="updated"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
